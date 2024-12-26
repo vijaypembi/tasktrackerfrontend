@@ -69,10 +69,26 @@ const Home = () => {
             console.error("Error fetching tasks:", error);
         }
     };
-
     useEffect(() => {
-        fetchTasks();
+        const fetchIntially = async () => {
+            try {
+                const response = await fetch(`${ApiUrl}/tasks`);
+                const data = await response.json();
+
+                setAllTasks(
+                    data.map((eachData) => {
+                        return updateData(eachData);
+                    })
+                );
+                //console.log("Updated data:", data);
+            } catch (error) {
+                console.error("Error fetching tasks:", error);
+            }
+        };
+
+        fetchIntially();
     }, []);
+    
     const addNewTask = async (event) => {
         // alert("post, submit");
         event.preventDefault();
