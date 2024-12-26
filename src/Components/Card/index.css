@@ -1,0 +1,49 @@
+.task-card {
+    /* font-family: "Poppins Roboto Open Sans sans-serif"; */
+    font-weight: 400;
+    color: rgb(238, 241, 241);
+}
+.bg-red {
+    background-color: #e46e65;
+    color: white;
+}
+.bg-custom {
+    background-color: rgba(95, 51, 225, 1);
+}
+.add-button {
+    /* background-color: #1751e5; */
+    border-style: none;
+    font-size: 20px;
+
+    border-radius: 10px;
+}
+.buttons-container {
+    display: flex;
+
+    font-size: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.delet-icon {
+    color: white;
+
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+}
+.edit-icon {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+}
+/* .task-name {
+}
+.task-priority {
+}
+.task-status {
+}
+.task-dueDate {
+}
+.task-description {
+} */
