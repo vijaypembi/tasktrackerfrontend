@@ -327,7 +327,7 @@ const Home = () => {
             {isOpen && (
                 <div className="d-flex flex-row justify-content-center">
                     <div
-                        className={`popup-overlay mb-5 w-50 ${
+                        className={`popup-overlay mb-5   ${
                             isDarkMode ? "bg-dark " : "bg-custom "
                         }`}
                     >

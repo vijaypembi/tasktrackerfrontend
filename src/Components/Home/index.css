@@ -4,8 +4,7 @@
 */
 
 .popup-overlay {
-    left: 25vw;
-    width: 100%;
+    width: 50%;
     height: auto;
     color: white;
     z-index: 1000;
@@ -15,6 +14,11 @@
     margin-top: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+    .popup-overlay {
+        width: 70%;
+    }
 }
 .input-eliment {
     display: flex;
